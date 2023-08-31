@@ -82,6 +82,8 @@ struct trapframe {
 
 enum procstate { UNUSED, USED, SLEEPING, RUNNABLE, RUNNING, ZOMBIE };
 
+#include "file.h"
+
 #define VMASIZE 16
 struct vma {
   int used;
